@@ -30,8 +30,6 @@ const ProductList = ({ division }) => {
   const [valueExists,setValueExists] = useState(true);
   const [dataValues,setDataValues] = useState([]);
 
-  var values = [];
-
   useEffect(() => {
     axios.get(FETCH_JOBS_BY_EMAIL_URL + division).then(jsonResponse => {
         if(jsonResponse.data.data.length === 0){

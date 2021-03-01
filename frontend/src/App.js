@@ -22,10 +22,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Which area's products do you wish to see?</p>
-        <Button id="employer" variant="primary" size="lg" onClick = {() => redirectToProductsPage(1)}>
+        <Button id="north" variant="primary" size="lg" onClick = {() => redirectToProductsPage(1)}>
                 North
         </Button>{' '}
-        <Button id="employer" variant="primary" size="lg" onClick = {() => redirectToProductsPage(2)}>
+        <Button id="south" variant="primary" size="lg" onClick = {() => redirectToProductsPage(2)}>
                 South
         </Button>{' '} 
       </header>
