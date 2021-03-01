@@ -8,8 +8,6 @@ const databaseDetails = {
     mongoDBUrl : "mongodb://localhost:27017/"
 }
 
-
-
 exports.configDetails = {
     environmentDetails,
     databaseDetails

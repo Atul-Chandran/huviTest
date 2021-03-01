@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "08a619d0-b3db-48b2-b7d0-cd280dcf3a1f",
+		"name": "Huvi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Success cases",
+			"item": [
+				{
+					"name": "Fetching all the products for north Indian customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/productList/division/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"productList",
+								"division",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetching all the products for north Indian customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/productList/division/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"productList",
+										"division",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-Ws1MjjYd7Ust/K52xIbnOMO3Pdk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Feb 2021 14:23:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 403,\n    \"message\": \"Invalid division mentioned\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetching all the products for south Indian customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/productList/division/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"productList",
+								"division",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetching all the products for south Indian customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/productList/division/2",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"productList",
+										"division",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-LNwjc8sF8ttHcMhKif2IkxUCAcY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Feb 2021 14:24:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"South Indian products fetched successfully\",\n    \"data\": [\n        {\n            \"product_id\": \"1279\",\n            \"title\": \"Ramdev Idli Instant Mix\",\n            \"product_variant\": \"400 GM\",\n            \"sale_price\": \"75.00\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Failure cases",
+			"item": [
+				{
+					"name": "Error message for an invalid division",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/productList/division/3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"productList",
+								"division",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error message for an invalid division",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/productList/division/3",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"productList",
+										"division",
+										"3"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
